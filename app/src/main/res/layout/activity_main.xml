@@ -7,6 +7,17 @@
     android:gravity="center"
     android:padding="16dp">
 
+    <!-- TextView that changes based on the image -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image 1"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000"/>
+
+    <!-- ImageView that shows the images -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
@@ -16,12 +27,14 @@
         android:contentDescription="Image Viewer"
         android:scaleType="centerInside" />
 
+    <!-- LinearLayout containing the Previous and Next buttons -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
+        <!-- Previous button -->
         <Button
             android:id="@+id/btnPrevious"
             android:layout_width="wrap_content"
@@ -29,6 +42,7 @@
             android:text="Previous"
             android:layout_marginEnd="16dp"/>
 
+        <!-- Next button -->
         <Button
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
@@ -38,4 +52,3 @@
     </LinearLayout>
 
 </LinearLayout>
-
